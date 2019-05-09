@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Marat Bedretdinov](https://up.htmlacademy.ru/htmlcss/25/user/558335).
-* Наставник: `Неизвестно`.
+* Наставник: [Алим Нагоев](https://htmlacademy.ru/profile/id911531).
 
 ---
 
