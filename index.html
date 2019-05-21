@@ -7,8 +7,8 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/nerds-logo.svg" width="160" height="67" alt="Nerds logo">
+        <a class="main-header-logo" aria-label="Логотип дизайн-студии Nerds">
+          <img src="img/nerds-logo.svg" width="160" height="67" alt="Логотип дизайн-студии Nerds">
         </a>
         <ul class="site-navigation">
           <li><a href="studio.html">СТУДИЯ</a></li>
@@ -28,19 +28,19 @@
               <img src="img/illustration-1.png" width="300" height="146" alt="Web illustration">
               <h3>Веб-сайты</h3>
               <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-              <a href="site-order.HTML">ЗАКАЗАТЬ</a>
+              <a href="site-order.HTML" aria-label="Заказать веб-сайт">ЗАКАЗАТЬ</a>
             </li>
             <li>
               <img src="img/illustration-2.png" width="300" height="146" alt="App illustration">
               <h3>Приложения</h3>
               <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-              <a href="app-order.HTML">ЗАКАЗАТЬ</a>
+              <a href="app-order.HTML" aria-label="Заказать приложение">ЗАКАЗАТЬ</a>
             </li>
             <li>
               <img src="img/illustration-3.png" width="300" height="146" alt="Presentation illustration">
               <h3>Презентации</h3>
               <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-              <a href="presentation-order.HTML">ЗАКАЗАТЬ</a>
+              <a href="presentation-order.HTML" aria-label="Заказать презентацию">ЗАКАЗАТЬ</a>
             </li>
           </ul>
         </section>
@@ -81,27 +81,29 @@
     <section class="modal modal-feedback">
           <h2>Напишите нам</h2>
           <form action="https://echo.htmlacademy.ru" method="post">
-            <label>
-              Ваше имя:<br>
-              <input type="text" name="name" value="" placeholder="Имя Фамилия">
+            <p>
+              <label aria-label="форма ввода имени и фамилии" style="display: block" for="name_input">
+              Ваше имя:
             </label>
-            <br>
-            <label>
-              Ваш e-email:<br>
-              <input type="text" name="email" value="" placeholder="email@example.com">
+            <input type="text" name="name" value="" placeholder="Имя Фамилия" style="display: block" id="name_input">
+          </p>
+          <p>
+            <label aria-label="форма ввода электронной почты" style="display: block" for="email_input">
+              Ваш e-email:
+              <input type="text" name="email" value="" placeholder="email@example.com" style="display: block" id="email_input">
             </label>
-            <br>
-            <label>
-              Текст письма:<br>
-              <textarea name="comment" rows="5" placeholder="В свободной форме">
+          </p>
+          <p>
+            <label aria-label="форма ввода комментария" style="display: block" for="comment_input">
+              Текст письма:
+              <textarea name="comment" rows="5" placeholder="В свободной форме" style="display: block" id="comment_input">
               </textarea>
             </label>
-            <br>
+          </p>
             <button type="submit">Отправить</button>
-            <br>
             <button class="modal-close" type="button" aria-label="Закрыть форму обратной связи">X</button>
           </form>
-          </section>
+        </section>
 
   </body>
 </html>

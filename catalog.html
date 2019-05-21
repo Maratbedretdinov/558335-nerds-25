@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.HTML">
+        <a class="main-header-logo" href="index.HTML" aria-label="Логотип дизайн-студии Nerds">
           <img src="img/nerds-logo.svg" width="160" height="67" alt="Nerds logo">
         </a>
         <ul class="site-navigation">
@@ -26,20 +26,20 @@
 
         <form class="filters" action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
-            <legend>Сетка</legend><br>
+            <legend>Сетка</legend>
             <ul>
               <li class="filter-option">
-                <label>
+                <label aria-label="Адаптивная">
                 <input class="filter-input-radio" type="radio" name="grid" value="adaptive" checked>Адаптивная
                 </label>
               </li>
               <li class="filter-option">
-                <label>
+                <labelaria-label="Фиксированная">
                 <input class="filter-input-radio" type="radio" name="grid" value="fix">Фиксированная
                 </label>
               </li>
               <li class="filter-option">
-                <label>
+                <label aria-label="Резиновая">
                 <input class="filter-input-radio" type="radio" name="grid" value="responsive">Резиновая
                 </label>
               </li>
@@ -47,7 +47,7 @@
           </fieldset>
 
           <fieldset>
-            <legend>Особенности</legend><br>
+            <legend>Особенности</legend>
             <ul>
               <li class="filter-option">
                 <label>
@@ -86,7 +86,7 @@
           <li class="catalog-item">
             <img src="img/img-sedona.jpg" width="360" height="576" alt="sedona">
             <div class="catalog-item-info">
-              <h3>
+              <h3 aria-label="Шаблон сайта Sedona">
                 <a href="catalog-item.HTML">Sedona</a>
               </h3>
               <p class="catalog-item-description">Информационный сайт для туристов</p>
@@ -96,7 +96,7 @@
           <li class="catalog-item">
             <img src="img/img-pink.jpg" width="360" height="576" alt="sedona">
             <div class="catalog-item-info">
-              <h3>
+              <h3 aria-label="Шаблон сайта Pink App">
                 <a href="catalog-item.HTML">Pink App</a>
               </h3>
               <p class="catalog-item-description">Продуктовый лендинг приложения для iOS и Android</p>
@@ -106,7 +106,7 @@
           <li class="catalog-item">
             <img src="img/img-barbershop.jpg" width="360" height="576" alt="sedona">
             <div class="catalog-item-info">
-              <h3>
+              <h3 aria-label="Шаблон сайта Barbershop">
                 <a href="catalog-item.HTML">Barbershop</a>
               </h3>
               <p class="catalog-item-description">Сайт салона красоты. Для мужчин, да.</p>
@@ -116,7 +116,7 @@
           <li class="catalog-item">
             <img src="img/img-mishka.jpg" width="360" height="576" alt="sedona">
             <div class="catalog-item-info">
-              <h3>
+              <h3 aria-label="Шаблон сайта Mishka">
                 <a href="catalog-item.HTML">MISHKA</a>
               </h3>
               <p class="catalog-item-description">Интернет-магазин вязаных игрушек</p>
@@ -126,7 +126,7 @@
           <li class="catalog-item">
             <img src="img/img-aplus.jpg" width="360" height="576" alt="sedona">
             <div class="catalog-item-info">
-              <h3>
+              <h3 aria-label="Шаблон сайта a plus">
                 <a href="catalog-item.HTML">A Plus</a>
               </h3>
               <p class="catalog-item-description">Лендинг курсов повышения квалификации</p>
@@ -136,10 +136,10 @@
           <li class="catalog-item">
             <img src="img/img-kvast.jpg" width="360" height="576" alt="sedona">
             <div class="catalog-item-info">
-              <h3>
+              <h3 aria-label="Шаблон сайта кваст">
                 <a href="catalog-item.HTML">КВАСТ</a>
               </h3>
-              <p class="catalog-item-description">Промо-сайт производителя крафтового кваса</p>
+              <p class="catalog-item-description">Промо-сайт производителя  крафтового кваса</p>
               <a class="button" href="#">9 900 руб.</a>
             </div>
           </li>
@@ -182,27 +182,28 @@
     <section class="modal modal-feedback">
           <h2>Напишите нам</h2>
           <form action="https://echo.htmlacademy.ru" method="post">
-            <label>
-              Ваше имя:<br>
-              <input type="text" name="name" value="" placeholder="Имя Фамилия">
+            <p>
+              <label aria-label="форма ввода имени и фамилии" style="display: block" for="name_input">
+              Ваше имя:
             </label>
-            <br>
-            <label>
-              Ваш e-email:<br>
-              <input type="text" name="email" value="" placeholder="email@example.com">
+            <input type="text" name="name" value="" placeholder="Имя Фамилия" style="display: block" id="name_input">
+          </p>
+          <p>
+            <label aria-label="форма ввода электронной почты" style="display: block" for="email_input">
+              Ваш e-email:
+              <input type="text" name="email" value="" placeholder="email@example.com" style="display: block" id="email_input">
             </label>
-            <br>
-            <label>
-              Текст письма:<br>
-              <textarea name="comment" rows="5" placeholder="В свободной форме">
+          </p>
+          <p>
+            <label aria-label="форма ввода комментария" style="display: block" for="comment_input">
+              Текст письма:
+              <textarea name="comment" rows="5" placeholder="В свободной форме" style="display: block" id="comment_input">
               </textarea>
             </label>
-            <br>
+          </p>
             <button type="submit">Отправить</button>
-            <br>
             <button class="modal-close" type="button" aria-label="Закрыть форму обратной связи">X</button>
           </form>
-          </section>
-
+        </section>
   </body>
 </html>
