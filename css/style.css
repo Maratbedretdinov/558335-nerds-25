@@ -61,6 +61,14 @@ a {
   width: 160px;
 }
 
+.button-web:hover {
+  background-color: #E74246;
+}
+
+.button-web:active{
+  background-color: #D7373B;
+}
+
 .button-app {
   width: 160px;
   background-color: #00CA74;
@@ -89,9 +97,15 @@ a {
 
 .button-feedback {
   width: 260px;
-
 }
 
+.button-feedback:hover {
+  background-color: #E74246;
+}
+
+.button-feedback:active{
+  background-color: #D7373B;
+}
 
 header {
   width: 100%;
