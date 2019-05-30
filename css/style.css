@@ -108,12 +108,7 @@ a {
 }
 
 header {
-  width: 100%;
   background-color: #EEEEEE;
-}
-
-.navigation {
-  width: 1200px;
 }
 
 .nav-links a {
@@ -129,10 +124,6 @@ header {
   list-style: none;
 }
 
-.nav-links a {
-  color: #000000;
-}
-
 .nav-links a:hover {
   color: #FB565A
 }
@@ -145,23 +136,17 @@ header {
   list-style: none;
 }
 
-.service-item {
-  text-align: left;
-}
-
 .service-item h3 {
   font-size: 24px;
   line-height: 30px;
 }
 
 footer {
-  width: 1200px;
-  margin: 0 auto;
-  height: 217px;
   display: flex;
 }
 
 .social {
+  list-style: none;
   width: 539px;
   display: flex;
   justify-content: center;
@@ -193,7 +178,7 @@ background-color: #E74246;
 }
 
 .discount {
-  align-self: center;
+
 }
 
 .discount-title {
@@ -283,10 +268,7 @@ background-color: #E74246;
 }
 
 .catalog-item {
-  height: 616px;
   overflow: hidden;
-  display: flex;
-  flex-flow: column;
   margin-bottom: 33px;
 }
 
@@ -298,13 +280,7 @@ background-color: #E74246;
   opacity: 1;
 }
 
-.catalog-item:hover .info-wrap {
-  margin-top: -231px;
-}
-
 .info-wrap {
-  width: 360px;
-  height: 231px;
   background-color: #EEEEEE;
 }
 
